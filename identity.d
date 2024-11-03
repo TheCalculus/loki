@@ -4,5 +4,7 @@
 // 4) hash knock
 // 5) broadcast identity
 
-module present;
+module identity;
 
+void handle_identity(char[] action) {
+}

@@ -1,6 +1,14 @@
 import std.stdio;
 import identity;
-import ephemeral;
+
+void handle_connect(char[] action) {
+}
+
+void update_config(string what, char[] that) {
+}
+
+void update_config(string what, bool that) {
+}
 
 void main(char[][] args) {
     if (args.length < 2) {
@@ -29,11 +37,11 @@ void main(char[][] args) {
        
         case "--encrypt":
             auto method = args[++i];
-            update_config(CRYPT, method);
+            update_config("CRYPT", method);
             break;
        
         case "--ephemeral":
-            update_config(EPHEM, true);
+            update_config("EPHEM", true);
             break;
        
         default:
